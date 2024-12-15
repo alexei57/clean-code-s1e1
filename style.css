@@ -42,20 +42,28 @@
   display: flex;
 }
 
-#completed-list, #todo-list {
+#completed-list,
+#todo-list {
   margin: 0;
   padding: 0px;
 }
 
-.todo-item, .title {
+.todo-item,
+.title {
   list-style: none;
 }
 
-.checkbox, .task-input, .add-button, .edit-button, .delete-button {
+.checkbox,
+.task-input,
+.add-button,
+.edit-button,
+.delete-button {
   outline: none;
 }
 
-.add-button, .edit-button, .delete-button {
+.add-button,
+.edit-button,
+.delete-button {
   background: none;
   border: 0px;
   color: #888;
@@ -65,7 +73,9 @@
   cursor: pointer;
 }
 
-.add-button:hover, .edit-button:hover, .delete-button:hover {
+.add-button:hover,
+.edit-button:hover,
+.delete-button:hover {
   color: #3a3a3a;
 }
 
@@ -82,7 +92,8 @@
   text-transform: uppercase;
 }
 
-.new-task-input, .task-input {
+.new-task-input,
+.task-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -95,7 +106,8 @@
   color: #888;
 }
 
-.new-task-input:focus, .task-input:focus {
+.new-task-input:focus,
+.task-input:focus {
   color: #333;
 }
 
