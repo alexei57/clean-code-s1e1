@@ -11,40 +11,49 @@
   display: block;
   text-align: right;
 }
+
 .info-image {
   width: 100%;
 }
+
 .header .info-link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
   .header { text-align: center;
-  }
+    }
 }
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-input-wrapper {
   display: flex;
 }
+
 #completed-list, #todo-list {
   margin:0;
   padding: 0px;
 }
+
 .todo-item, .title {
   list-style:none;
 }
+
 .checkbox, .task-input, .add-button, .edit-button, .delete-button {
   outline:none;
 }
+
 .add-button, .edit-button, .delete-button {
   background: none;
   border: 0px;
@@ -54,7 +63,8 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.add-button:hover, .edit-button:hover, .delete-button;:hover {
+
+.add-button:hover, .edit-button:hover, .delete-button:hover {
   color: #3a3a3a;
 }
 /* Heading */
