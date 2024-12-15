@@ -35,7 +35,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-input-wrapper {
@@ -141,7 +141,7 @@
 }
 
 .task-input {
-  width: 226px
+  width: 226px;
 }
 
 .icon-cross {
@@ -157,14 +157,14 @@
 /* Completed */
 
 .completed-label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
 .task-input {
-  display: none
+  display: none;
 }
 
 .edit-item .task-input {
