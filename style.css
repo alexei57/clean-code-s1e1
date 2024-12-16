@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.info-image {
+.header__image {
   width: 100%;
 }
 
-.header .info-link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -32,36 +32,40 @@
   margin: 0 auto 0;
 }
 
-.task {
+.task-label,
+.new-task__input,
+.task-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-input-wrapper {
+.task__input-wrapper {
   display: flex;
 }
 
 #completed-list,
-#todo-list {
+#todo__list {
   margin: 0;
   padding: 0px;
 }
 
-.todo-item,
-.title {
+.todo__item,
+.task-section__title,
+.todo__title,
+.completed__title {
   list-style: none;
 }
 
-.checkbox,
+.todo__input,
 .task-input,
-.add-button,
+.task__add-button,
 .edit-button,
 .delete-button {
   outline: none;
 }
 
-.add-button,
+.task__add-button,
 .edit-button,
 .delete-button {
   background: none;
@@ -73,7 +77,7 @@
   cursor: pointer;
 }
 
-.add-button:hover,
+.task__add-button:hover,
 .edit-button:hover,
 .delete-button:hover {
   color: #3a3a3a;
@@ -81,8 +85,15 @@
 
 /* Heading */
 
-.task-title,
-.title {
+.main__title,
+.task-section__title_hidden {
+  display: none;
+}
+
+.task-section__title,
+.todo__title,
+.completed__title,
+.task__label-add {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -92,7 +103,7 @@
   text-transform: uppercase;
 }
 
-.new-task-input,
+.new-task__input,
 .task-input {
   margin: 0;
   font-size: 18px;
@@ -106,25 +117,25 @@
   color: #888;
 }
 
-.new-task-input:focus,
+.new-task__input:focus,
 .task-input:focus {
   color: #333;
 }
 
 /* New Task */
 
-.task-title {
+.task__label-add {
   display: block;
   margin: 0 0 20px;
 }
 
-.new-task-input {
+.new-task__input {
   width: 318px;
 }
 
 /* Task list */
 
-.todo-item {
+.todo__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -133,15 +144,15 @@
   align-items: center;
 }
 
-.todo-item > .checkbox,
-.todo-item > .task-label,
-.todo-item > .task-input,
-.todo-item > .edit-button,
-.todo-item > .delete-button {
+.todo__item > .todo__input,
+.todo__item > .task-label,
+.todo__item > .task-input,
+.todo__item > .edit-button,
+.todo__item > .delete-button {
   vertical-align: middle;
 }
 
-.checkbox {
+.todo__input {
   margin: 0 10px;
 }
 
@@ -179,11 +190,11 @@
   display: none;
 }
 
-.edit-item .task-input {
+.todo__edit-item .task-input {
   display: inline-block;
   width: 224px
 }
 
-.edit-item .task-label {
+.todo__edit-item .task-label {
   display: none;
 }
