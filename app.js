@@ -42,7 +42,7 @@ var createNewTaskElement=function(taskString){
   editInput.type="text";
   editInput.className="task-input";
 
-  editButton.innerText="edit"; //innerText encodes special characters, HTML does not.
+  editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
   editButton.className="edit-button";
 
   deleteButton.className="delete-button";
