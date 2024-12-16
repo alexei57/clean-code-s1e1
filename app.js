@@ -37,7 +37,7 @@ var createNewTaskElement=function(taskString){
   label.className='task-label';
 
   //Each elements, needs appending
-  checkBox.type="todo__input";
+  checkBox.type="checkbox";
   checkBox.className="todo__input completed__input"
   editInput.type="text";
   editInput.className="task-input";
